@@ -34,6 +34,7 @@ img{
   color: #525252;
   transition: opacity 0.7s ease-in-out;
 }
+/* 깃허브확인용주석 */
 .footer ul li:last-child{
   margin-top: 1px;
 }
