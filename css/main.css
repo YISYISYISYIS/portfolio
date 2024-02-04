@@ -32,6 +32,7 @@ img{
   line-height: 1.2;
   text-align: center;
   color: #525252;
+  transition: opacity 0.7s ease-in-out;
 }
 .footer ul li:last-child{
   margin-top: 1px;
@@ -103,13 +104,12 @@ img{
 .portpolio_link .portpolio_header{
   width: 100%;
   height: 80px;
-  background: #bebebe;
   display: flex;
   align-items: center;
   justify-content: right;
 }
 .portpolio_link .portpolio_header .logo{
-  width: 40px;
+  width: 30px;
   z-index: 100;
   margin-right: 40px;
 }
@@ -348,10 +348,10 @@ img{
   justify-content: right;
 }
 .main .main_header .logo{
-  width: 40px;
+  width: 30px;
   z-index: 100;
   margin-right: 40px;
-  transition: opacity 0.7s;
+  transition: opacity 0.7s ease-in-out;
 }
 /* //main_header */
 .main .main_inner{
@@ -371,6 +371,7 @@ img{
   display: flex;
   white-space: nowrap;
   z-index: 50;
+  transition: opacity 0.7s ease-in-out;
 }
 .main .main_inner .welcome_text_container .welcome_text_group {
   position: absolute;
@@ -506,3 +507,212 @@ img{
 }
 /* //JCH */
 /* //portpolio_link */
+
+
+
+
+
+/* 767~1024 */
+@media (min-width:767px){
+  .footer{
+    font-size: 11px;
+  }
+  .footer ul{
+    display: flex;
+    width: 100%;
+  }
+  .footer ul li{
+    width: 33.3333%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer ul li:first-child{
+    flex-wrap: wrap;
+  }
+  .footer ul li ul{
+    flex-direction: column;
+    align-items: center;
+    white-space: nowrap;
+    margin-bottom: 0px;
+  }
+  .footer ul li:last-child{
+    margin-top: 0px;
+  }
+  .footer p:after{
+    left: 15px;
+  }
+  /* //footer */
+  .portpolio{
+    width: 50px;
+    height: 60px;
+    font-size: 20px;
+  }
+  /* //portpolio */
+  .portpolio_link .portpolio_header .logo{
+    width: 40px;
+  }
+  /* //portpolio_header */
+  .portpolio_link .portpolio_inner .portpolio_contents .p_text{
+    font-size: 12px;
+    line-height: 1.6;
+  }
+  /* //portpolio_text */
+  .portpolio_link .p_btn .portpolio{
+    width: 30px;
+    height: 40px;
+    margin-right: 30px;
+    font-size: 12px;
+  }
+  /* //portpolio_p_btn */
+  /* //portpolio_inner */
+  /* //common */
+
+
+
+
+ 
+
+  .intro_inner p{
+    font-size: 25px;
+  }
+  .intro_inner .p_Welcome{
+    margin-left: 140px;
+    width: 120px;
+  }
+  .intro_inner .p_homepage{
+    margin-right: 140px;
+    width: 180px;
+  }
+  /* //intro_text */
+  .intro .intro_inner .animate_box .square{
+    width: 50px;
+    height: 60px;
+  }
+  .intro .intro_inner .animate_box .square .s_top{
+    width: 50px;
+    height: 30px;
+  }
+  .intro .intro_inner .animate_box .square .s_bottom {
+    width: 50px;
+    height: 30px;
+  }
+  /* //animate_box */
+  /* //intro_inner */
+  /* //intro */
+  
+
+
+
+
+ 
+  .main .bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+    z-index: 100;
+    border-bottom: 1px solid #e7e7e7;
+  }
+  .main #bg1{
+    background: linear-gradient(to bottom right,rgba(249, 122, 11, 0), rgba(249, 122, 11, 0.2)),url(../img/main/kdnavien768.png);
+    background-position: 0% 0%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 50%;
+    z-index: 1;
+  }
+  .main #bg2{
+    background: linear-gradient(to bottom right,rgb(241, 174, 29, 0), rgb(241, 174, 29, 0.3)),url(../img/main/paikcapture.PNG);
+    background-position: 20% 0%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+  }
+  .main #bg3{
+    background: linear-gradient(to bottom right,rgb(0, 71, 171, 0), rgb(0, 71, 171,0.2)),url(../img/main/JCHcapture.jpg);
+    background-position: 20% -0%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+  }
+  /* //main_bg */
+  .main .main_header .logo{
+    width: 40px;
+  }
+  /* //main_header */
+  .main .main_inner{
+    width: 100%;
+    height: calc(100% - 160px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;  
+  }
+  .main .main_inner .welcome_text_container{
+    position: absolute;
+    top: 5vh;
+    left: 0vw;  
+    display: flex;
+    white-space: nowrap;
+    z-index: 50;
+  }
+  .main .main_inner .welcome_text_container .welcome_text_group {
+    position: absolute;
+    display: flex;
+  }
+  
+  .main .main_inner .welcome_text_container .welcome_text{
+    font-size: calc(min(13vw, 8vh));
+  }
+  .main .main_inner .kd_text{
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    text-align: center; 
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    z-index: 2;
+  }
+  .main .main_inner .paik_text{
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out; 
+    text-align: center;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+  .main .main_inner .JCH_text{
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out; 
+    text-align: center;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+  .main .main_inner .contents{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  /* //main_inner */
+  /* //main */
+}

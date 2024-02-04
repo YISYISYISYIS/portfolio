@@ -88,7 +88,7 @@ setTimeout(function() {
 let intervalId;
 const container = document.getElementById('textContainer');
 const textGroups = Array.from(container.getElementsByClassName('welcome_text_group'));
-const speed = 0.8;
+const speed = 0.3;
 
 function startAnimation() {
   // 첫 번째 텍스트 그룹의 너비를 기준으로 두 번째 텍스트 그룹의 시작 위치를 설정
@@ -108,7 +108,7 @@ function startAnimation() {
       }
       textGroup.style.left = left + 'px';
     });
-  }, 50);
+  }, 20);
 }
 
 function stopAnimation() {
@@ -149,6 +149,7 @@ window.onload = function() {
 
   const logo = document.querySelector('.logo');
   const portpolios = document.querySelectorAll('.portpolio');
+  const footer = document.querySelector('.footer');
 
   logo.addEventListener('click', function() {
     location.reload();
@@ -157,9 +158,13 @@ window.onload = function() {
   portpolios.forEach((portpolio) => {
     portpolio.addEventListener('mouseenter', function() {
       logo.style.opacity = '0';
+      textContainer.style.opacity = '0';
+      footer.style.opacity = '0';
     });
     portpolio.addEventListener('mouseleave', function() {
       logo.style.opacity = '1';
+      textContainer.style.opacity = '1';
+      footer.style.opacity = '1';
     });
   });
 
@@ -168,15 +173,6 @@ window.onload = function() {
     setTimeout(function() {
       intro.style.clipPath = 'inset(0 0 0 0)';
     }, 1);
-  });
-
-  portpolios.forEach((portpolio) => {
-    portpolio.addEventListener('mouseenter', function() {
-      logo.style.opacity = '0';
-    });
-    portpolio.addEventListener('mouseleave', function() {
-      logo.style.opacity = '1';
-    });
   });
   // //main_logo
 
