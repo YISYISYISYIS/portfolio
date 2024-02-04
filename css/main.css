@@ -1,0 +1,508 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-size: 16px;
+  font-family:'Noto Sans KR', sans-serif;
+  color: #080808;
+  background-color: #fff;
+  line-height: 1;
+  margin: 0 auto;
+}
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+img{
+  max-width: 100%;
+  vertical-align: top;
+}
+.footer{
+  width: 100%;
+  height: 80px;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.2;
+  text-align: center;
+  color: #525252;
+}
+.footer ul li:last-child{
+  margin-top: 1px;
+}
+.footer ul li ul{
+  margin-bottom: 3px;
+}
+.footer p{
+  position: relative;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+.footer p:after{
+  content: '';
+  background: #525252;
+  width: 50px;
+  height: 1px;
+  top: 18px;
+  left: 75px;
+  display: block;
+  position: absolute;
+}
+/* //footer */
+.portpolio{
+  width: 40px;
+  height: 50px;
+  background-color: #000;
+  transform: skewX(-20deg);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.1s ease-in-out;
+  will-change: transform; 
+  /*오버시 이미지 다른이미지 떨림현상방지용.브라우저에 transform 속성이 변화할 것임을 미리 알림 .그러나 will-change 속성은 브라우저의 최적화 동작에 영향을 주므로, 필요한 경우에만 사용*/
+  position: relative;
+  z-index: 100;
+  cursor: pointer;
+}
+.portpolio p{
+  transform: skewX(20deg);
+  margin: 0;
+}
+.portpolio.p1:hover {
+  transform: skewX(0deg) scaleY(1.5) scaleX(2);
+  background-color: rgba(249, 122, 11, 0.8); 
+}
+.portpolio.p1:hover p {
+  color: #080808; 
+  transform: skewX(0deg);
+}
+.portpolio.p2:hover {
+  transform: skewX(0deg) scaleY(1.5) scaleX(2);
+  background-color: rgb(241, 174, 29, 0.8); 
+}
+.portpolio.p2:hover p {
+  color: #000000; 
+  transform: skewX(0deg);
+}
+.portpolio.p3:hover {
+  transform: skewX(0deg) scaleY(1.5) scaleX(2);
+  background-color: rgb(0, 71, 171, 0.8); 
+}
+.portpolio.p3:hover p {
+  color: #000000; 
+  transform: skewX(0deg);
+}
+/* //portpolio */
+.portpolio_link .portpolio_header{
+  width: 100%;
+  height: 80px;
+  background: #bebebe;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+.portpolio_link .portpolio_header .logo{
+  width: 40px;
+  z-index: 100;
+  margin-right: 40px;
+}
+/* //portpolio_header */
+.portpolio_link .portpolio_inner{
+  width: 100%;
+  height: calc(100% - 160px);
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  position: relative;
+  background-color: #fff;
+}
+.portpolio_link .portpolio_inner .portpolio_contents{
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.portpolio_link .portpolio_inner .portpolio_contents .p_text{
+  width: 100%;
+  height: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  line-height: 1.3;
+  padding: 0px 20px 0px 20px;
+}
+.portpolio_link .portpolio_inner .portpolio_contents .p_text .text{
+  display: flex;
+  padding: 0px 10px;
+}
+.portpolio_link .portpolio_inner .portpolio_contents .p_text .text>div:first-child{
+  width: 100px;
+}
+.portpolio_link .portpolio_inner .portpolio_contents .p_text .text>div:last-child{
+  width: 100%;
+}
+/* //portpolio_text */
+.portpolio_link .p_btn{
+  width: 100%;
+  height: 25%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin-right: 40px;
+}
+.portpolio_link .p_btn .portpolio{
+  width: 20px;
+  height: 30px;
+  margin-right: 20px;
+  font-size: 10px;
+}
+/* //portpolio_p_btn */
+/* //portpolio_inner */
+/* //common */
+
+
+
+
+.wrap{
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+.intro{
+  z-index: 20;
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  transition: clip-path 0.5s;
+  clip-path: inset(0 0 0 0);
+}
+.intro_header{
+  width: 100%;
+  height: 80px;
+  background-color: black;
+}
+.intro_inner{
+  width: 100%;
+  height: calc(100% - 160px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.intro_inner p{
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.5;
+}
+.intro_inner .p_Welcome{
+  margin-right: auto;
+  margin-left: 40px;
+  position: relative;
+  overflow: hidden;
+  width: 90px;
+}
+.intro_inner .p_Welcome::after{
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: black;
+  animation: cover-left 0.2s forwards;
+  animation-delay: 2.5s;
+}
+@keyframes cover-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+.intro_inner .p_homepage{
+  margin-left: auto;
+  margin-right: 40px;
+  position: relative;
+  overflow: hidden;
+  width: 140px;
+}
+.intro_inner .p_homepage::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  background: black;
+  animation: cover-right 0.2s forwards;
+  animation-delay: 2.5s;
+}
+@keyframes cover-right {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+/* //intro_text */
+.intro .intro_inner .animate_box{
+  width: 100%;
+  height: 40%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.intro .intro_inner .animate_box .square{
+  width: 40px;
+  height: 50px;
+}
+.intro .intro_inner .animate_box .square .s_top{
+  background-color: #fff;
+  width: 40px;
+  height: 25px;
+  opacity: 0;
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: transform 0.1s ease-in-out, opacity 0.7s ease-in-out;
+}
+.intro .intro_inner .animate_box .square .s_bottom {
+  background-color: #fff;
+  width: 40px;
+  height: 25px;
+  opacity: 0;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.1s ease-in-out, opacity 0.7s ease-in-out;
+}
+/* //animate_box */
+/* //intro_inner */
+.intro_footer{
+  width: 100%;
+  height: 80px;
+  background-color: black;
+}
+/* //intro */
+
+
+
+
+
+.main{
+  z-index: 10;
+  width: 100%;
+  height: 100vh;
+  background-color: #ffffff;
+  position: relative;
+  transition: transform 0.5s;
+}
+.main .bg{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0;
+  z-index: 100;
+  border-bottom: 1px solid #e7e7e7;
+}
+.main #bg1{
+  background: linear-gradient(to bottom right,rgba(249, 122, 11, 0), rgba(249, 122, 11, 0.2)),url(../img/main/kdcapture.jpg);
+  background-position: 20% 0%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+}
+.main #bg2{
+  background: linear-gradient(to bottom right,rgb(241, 174, 29, 0), rgb(241, 174, 29, 0.3)),url(../img/main/paikcapture.PNG);
+  background-position: 20% 0%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+}
+.main #bg3{
+  background: linear-gradient(to bottom right,rgb(0, 71, 171, 0), rgb(0, 71, 171,0.2)),url(../img/main/JCHcapture.jpg);
+  background-position: 20% -0%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+}
+/* //main_bg */
+.main .main_header{
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+.main .main_header .logo{
+  width: 40px;
+  z-index: 100;
+  margin-right: 40px;
+  transition: opacity 0.7s;
+}
+/* //main_header */
+.main .main_inner{
+  width: 100%;
+  height: calc(100% - 160px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;  
+}
+.main .main_inner .welcome_text_container{
+  position: absolute;
+  top: 5vh;
+  left: 0vw;  
+  display: flex;
+  white-space: nowrap;
+  z-index: 50;
+}
+.main .main_inner .welcome_text_container .welcome_text_group {
+  position: absolute;
+  display: flex;
+}
+.welcome_text_container .welcome_text_group.w1{
+  /* background-color: red; */
+}
+.welcome_text_container .welcome_text_group.w2{
+  /* background-color: blue; */
+}
+.main .main_inner .welcome_text_container .welcome_text{
+  font-size: calc(min(12vw, 7vh));
+  font-weight: 400;
+  white-space: nowrap;
+  margin-right: 50px;
+  font-style: italic;
+}
+.main .main_inner .kd_text{
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  text-align: center; 
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.main .main_inner .paik_text{
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out; 
+  text-align: center;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.main .main_inner .JCH_text{
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out; 
+  text-align: center;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.main .main_inner .contents{
+  width: 100%;
+  height: 40%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+/* //main_inner */
+/* //main */
+
+
+
+
+
+.portpolio_link{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  z-index: 100;
+}
+.portpolio_link .kdnavien{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: none;
+}
+.portpolio_link .kdnavien .kdnavien_bg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  background-image: url(../img/main/kdcapture.jpg);
+  background-position: 20% 0%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  width: 100%;
+  border-bottom: 1px solid #e7e7e7;
+}
+/* //kdnavien */
+.portpolio_link .paikdabang{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: none;
+}
+.portpolio_link .paikdabang .paikdabang_bg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  background-image: url(../img/main/paikcapture.PNG);
+  background-position: 20% 0%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  width: 100%;
+  border-bottom: 1px solid #e7e7e7;
+}
+/* //paikdabang */
+.portpolio_link .JCH{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: none;
+}
+.portpolio_link .JCH .JCH_bg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  background-image: url(../img/main/JCHcapture.jpg);
+  background-position: 20% 0%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  width: 100%;
+  border-bottom: 1px solid #e7e7e7;
+}
+/* //JCH */
+/* //portpolio_link */
