@@ -561,8 +561,8 @@ img{
   }
   /* //portpolio_header */
   .portpolio_link .portpolio_inner .portpolio_contents .p_text{
-    font-size: 20px;
-    line-height: 1.6;
+    font-size: 16px;
+    line-height: 1.5;
   }
   .portpolio_link .portpolio_inner .portpolio_contents .p_text .text>div:first-child{
     width: 150px;
