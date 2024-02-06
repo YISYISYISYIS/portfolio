@@ -306,3 +306,36 @@ window.onload = function() {
 
 
 
+let p1 = document.querySelector('.p1');
+let p2 = document.querySelector('.p2');
+let p3 = document.querySelector('.p3');
+
+p1.addEventListener('mouseover', function() {
+  p2.style.opacity = '0';
+  p3.style.opacity = '0';
+});
+
+p1.addEventListener('mouseout', function() {
+  p2.style.opacity = '1';
+  p3.style.opacity = '1';
+});
+
+p2.addEventListener('mouseover', function() {
+  p1.style.opacity = '0';
+  p3.style.opacity = '0';
+});
+
+p2.addEventListener('mouseout', function() {
+  p1.style.opacity = '1';
+  p3.style.opacity = '1';
+});
+
+p3.addEventListener('mouseover', function() {
+  p1.style.opacity = '0';
+  p2.style.opacity = '0';
+});
+
+p3.addEventListener('mouseout', function() {
+  p1.style.opacity = '1';
+  p2.style.opacity = '1';
+});
