@@ -324,21 +324,21 @@ img{
 }
 .main #bg1{
   background: linear-gradient(to bottom right,rgba(249, 122, 11, 0), rgba(249, 122, 11, 0.2)),url(../img/main/kdnavien_a3.jpg);
-  background-position: 0% 5%;
+  background-position: 0% 20%;
   background-repeat: no-repeat;
   background-size: cover;
   height: 50vh;
 }
 .main #bg2{
   background: linear-gradient(to bottom right,rgb(241, 174, 29, 0), rgb(241, 174, 29, 0.3)),url(../img/main/paikdabang_a3.jpg);
-  background-position: 0% 5%;
+  background-position: 0% 20%;
   background-repeat: no-repeat;
   background-size: cover;
   height: 50vh;
 }
 .main #bg3{
   background: linear-gradient(to bottom right,rgb(0, 71, 171, 0), rgb(0, 71, 171,0.2)),url(../img/main/JCHa3.jpg);
-  background-position: 0% 5%;
+  background-position: 0% 20%;
   background-repeat: no-repeat;
   background-size: cover;
   height: 50vh;
