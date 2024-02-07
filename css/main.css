@@ -72,7 +72,7 @@ img{
   z-index: 100;
   cursor: pointer;
   border-radius: 5px;
-  box-shadow: 0.2px 0.2px 1px #313131;
+  box-shadow: 0.1px 0.1px 3px #313131;
 }
 .portpolio p{
   transform: skewX(20deg);
