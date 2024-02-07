@@ -270,6 +270,10 @@ window.onload = function() {
   // //portpolio_link
 
 
+
+
+
+  
   // 페이지 로드 시 현재 상태를 'main'으로 설정.
   history.replaceState({page: 'main'}, null, '');
 
@@ -339,3 +343,4 @@ p3.addEventListener('mouseout', function() {
   p1.style.opacity = '1';
   p2.style.opacity = '1';
 });
+// //portfolio_btn

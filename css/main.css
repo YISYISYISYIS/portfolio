@@ -101,6 +101,30 @@ img{
   transform: skewX(0deg);
 }
 /* //portpolio */
+.portpolio_link{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  z-index: 100;
+}
+.portpolio_link .lunchersite{
+  position: absolute;
+  width: 100px;
+  height: 35px;
+  bottom: 20px;
+  right: 40px;
+  background-color: rgba(249, 122, 11, 0.8); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 15px;
+  border-radius: 2px;
+  transition: background-color 0.3s ease;
+}
+.portpolio_link .lunchersite:hover{
+  background-color: #000000;
+}
 .portpolio_link .portpolio_header{
   width: 100%;
   height: 80px;
@@ -444,12 +468,7 @@ img{
 
 
 
-.portpolio_link{
-  width: 100%;
-  height: 100vh;
-  position: relative;
-  z-index: 100;
-}
+
 .portpolio_link .kdnavien{
   width: 100%;
   height: 100%;
@@ -517,6 +536,12 @@ img{
   margin-left: 2px;
   font-size: 12px;
 }
+.portpolio_link .paikdabang .paikdabang_bg .lunchersite{
+  background-color: rgba(241, 174, 29, 0.8);
+}
+.portpolio_link .paikdabang .paikdabang_bg .lunchersite:hover{
+  background-color: #000;
+}
 /* //paikdabang */
 .portpolio_link .JCH{
   width: 100%;
@@ -550,6 +575,12 @@ img{
 .portpolio_link .JCH .JCH_bg .portfolio_text dd{
   margin-left: 35px;
   font-size: 12px;
+}
+.portpolio_link .JCH .JCH_bg .lunchersite{
+  background-color: rgb(0, 71, 171, 0.8);
+}
+.portpolio_link .JCH .JCH_bg .lunchersite:hover{
+  background-color: #000;
 }
 .portpolio_link .logo img{
   filter: invert(1) brightness(2);
@@ -599,6 +630,11 @@ img{
     font-size: 25px;
   }
   /* //portpolio */
+  .portpolio_link .lunchersite{
+    width: 120px;
+    height: 40px;
+    font-size: 18px;
+  }
   .portpolio_link .portpolio_header .logo{
     width: 40px;
   }
@@ -754,6 +790,12 @@ img{
     font-size: 30px;
   }
   /* //portpolio */
+  .portpolio_link .lunchersite{
+    width: 140px;
+    height: 45px;
+    bottom: 60px;
+    font-size: 20px;
+  }
   .portpolio_link .portpolio_header .logo{
     width: 40px;
   }
@@ -916,12 +958,7 @@ img{
 
 
 
-  .portpolio_link{
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    z-index: 100;
-  }
+
   .portpolio_link .kdnavien{
     width: 100%;
     height: 100%;
@@ -934,9 +971,9 @@ img{
     left: 0;
     z-index: 1;
     background-image: url(../img/main/kdnavienmockupnoname.jpg);
-    background-position: 60% 0%;
+    background-position: 50% 0%;
     background-repeat: no-repeat;
-    background-size: 120% 100%;
+    background-size: cover;
     height: 100vh;
     width: 50%;
     border-bottom: 1px solid #e7e7e7;
@@ -964,9 +1001,9 @@ img{
     left: 0;
     z-index: 1;
     background-image: url(../img/main/paikdabang_mockupnoname.jpg);
-    background-position: 60% 0%;
+    background-position: 50% 0%;
     background-repeat: no-repeat;
-    background-size: 120% 100%;
+    background-size: cover;
     height: 100vh;
     width: 50%;
     border-bottom: 1px solid #e7e7e7;
@@ -993,9 +1030,9 @@ img{
     left: 0;
     z-index: 1;
     background: url(../img/main/JCHmockupnoname.jpg);
-    background-position: 60% 0%;
+    background-position: 50% 0%;
     background-repeat: no-repeat;
-    background-size: 120% 100%;
+    background-size: cover;
     height: 100vh;
     width: 50%;
     border-bottom: 1px solid #e7e7e7;
