@@ -109,6 +109,21 @@ img{
   position: relative;
   z-index: 100;
 }
+.portpolio_link .gotocode{
+  position: absolute;
+  width: 100px;
+  height: 35px;
+  bottom: 60px;
+  right: 40px;
+  background-color: rgba(249, 122, 11, 0.8); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 15px;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+}
 .portpolio_link .lunchersite{
   position: absolute;
   width: 100px;
@@ -126,6 +141,9 @@ img{
 }
 .portpolio_link .lunchersite:hover{
   background-color: #000000;
+}
+.portpolio_link .gotocode:hover{
+  background-color: #000;
 }
 .portpolio_link .portpolio_header{
   width: 100%;
@@ -541,7 +559,13 @@ img{
 .portpolio_link .paikdabang .paikdabang_bg .lunchersite{
   background-color: rgba(241, 174, 29, 0.8);
 }
+.portpolio_link .paikdabang .paikdabang_bg .gotocode{
+  background-color: rgba(241, 174, 29, 0.8);
+}
 .portpolio_link .paikdabang .paikdabang_bg .lunchersite:hover{
+  background-color: #000;
+}
+.portpolio_link .paikdabang .paikdabang_bg .gotocode:hover{
   background-color: #000;
 }
 /* //paikdabang */
@@ -581,7 +605,13 @@ img{
 .portpolio_link .JCH .JCH_bg .lunchersite{
   background-color: rgb(0, 71, 171, 0.8);
 }
+.portpolio_link .JCH .JCH_bg .gotocode{
+  background-color: rgb(0, 71, 171, 0.8);
+}
 .portpolio_link .JCH .JCH_bg .lunchersite:hover{
+  background-color: #000;
+}
+.portpolio_link .JCH .JCH_bg .gotocode:hover{
   background-color: #000;
 }
 .portpolio_link .logo img{
@@ -636,6 +666,12 @@ img{
     width: 120px;
     height: 40px;
     font-size: 18px;
+  }
+  .portpolio_link .gotocode{
+    width: 120px;
+    height: 40px;
+    font-size: 18px;
+    bottom: 70px;
   }
   .portpolio_link .portpolio_header .logo{
     width: 40px;
@@ -797,6 +833,13 @@ img{
     height: 45px;
     bottom: 60px;
     font-size: 20px;
+  }
+  .portpolio_link .gotocode{
+    width: 140px;
+    height: 45px;
+    bottom: 60px;
+    font-size: 20px;
+    bottom: 115px;
   }
   .portpolio_link .portpolio_header .logo{
     width: 50px;
