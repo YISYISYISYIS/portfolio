@@ -71,6 +71,8 @@ img{
   position: relative;
   z-index: 100;
   cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0.2px 0.2px 1px #313131;
 }
 .portpolio p{
   transform: skewX(20deg);
@@ -119,7 +121,7 @@ img{
   align-items: center;
   color: #fff;
   font-size: 15px;
-  border-radius: 2px;
+  border-radius: 3px;
   transition: background-color 0.3s ease;
 }
 .portpolio_link .lunchersite:hover{
@@ -797,7 +799,7 @@ img{
     font-size: 20px;
   }
   .portpolio_link .portpolio_header .logo{
-    width: 40px;
+    width: 50px;
   }
   /* //portpolio_header */
   .portpolio_link .portpolio_inner .portpolio_contents .p_text{
