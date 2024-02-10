@@ -150,29 +150,32 @@ window.onload = function() {
   const logo = document.querySelector('.logo');
   const portpolios = document.querySelectorAll('.portpolio');
   const footer = document.querySelector('.footer');
+  const bg = document.querySelectorAll('.main .bg');
+
+  bg.forEach(bgElement => {
+    bgElement.style.backgroundSize = "100%";
+  });
 
   logo.addEventListener('click', function() {
     location.reload();
   });
-
-  portpolios.forEach((portpolio) => {
+  
+  portpolios.forEach((portpolio, i) => {
     portpolio.addEventListener('mouseenter', function() {
       logo.style.opacity = '0';
       textContainer.style.opacity = '0';
       footer.style.opacity = '0';
+      bg[i % 3].style.transition = "background-size 5s ease-in-out, opacity 0.5s ease-in-out";  
+      bg[i % 3].style.backgroundSize = "103%";
     });
+  
     portpolio.addEventListener('mouseleave', function() {
       logo.style.opacity = '1';
       textContainer.style.opacity = '1';
       footer.style.opacity = '1';
+      bg[i % 3].style.transition = "background-size 5s ease-in-out, opacity 0.5s ease-in-out"; 
+      bg[i % 3].style.backgroundSize = "100%";
     });
-  });
-
-  logo.addEventListener('click', function() {
-    intro.style.display = 'block'; 
-    setTimeout(function() {
-      intro.style.clipPath = 'inset(0 0 0 0)';
-    }, 1);
   });
   // //main_logo
 
@@ -270,6 +273,10 @@ window.onload = function() {
   // //portpolio_link
 
 
+
+
+
+  
   // 페이지 로드 시 현재 상태를 'main'으로 설정.
   history.replaceState({page: 'main'}, null, '');
 
@@ -306,3 +313,37 @@ window.onload = function() {
 
 
 
+let p1 = document.querySelector('.p1');
+let p2 = document.querySelector('.p2');
+let p3 = document.querySelector('.p3');
+
+p1.addEventListener('mouseover', function() {
+  p2.style.opacity = '0';
+  p3.style.opacity = '0';
+});
+
+p1.addEventListener('mouseout', function() {
+  p2.style.opacity = '1';
+  p3.style.opacity = '1';
+});
+
+p2.addEventListener('mouseover', function() {
+  p1.style.opacity = '0';
+  p3.style.opacity = '0';
+});
+
+p2.addEventListener('mouseout', function() {
+  p1.style.opacity = '1';
+  p3.style.opacity = '1';
+});
+
+p3.addEventListener('mouseover', function() {
+  p1.style.opacity = '0';
+  p2.style.opacity = '0';
+});
+
+p3.addEventListener('mouseout', function() {
+  p1.style.opacity = '1';
+  p2.style.opacity = '1';
+});
+// //portfolio_btn
